@@ -8,3 +8,12 @@ services:
     ports:
       - 3000:3000
     user: "104"
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: fiapdb
+      MYSQL_USER: fiap
+    ports:
+      - 3306:3306
